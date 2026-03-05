@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>This is the Header</h1>
+    </header>
+
+    <main id="main-container">
+        <section>
+        <h1>
+            Introduction to DOM
+        </h1>
+        <ul id="player-list">
+            <li>Nasir</li>
+            <li>Uddin</li>
+            <li>Patwary</li>
+        </ul>
+
+        <p id="person">Shakib</p>
+        <p>Tamim</p>
+        <p>Nasir Uddin Patwary</p>
+        <p>Sarbis Alom</p>
+        <p>Nahid</p>
+        <p>Abu Sayid</p>
+        <p>Arman</p>
+        <p>Mirza Abbas</p>
+        <p>Shofiul Islam</p>
+        <p>Babar</p>
+    </section>
+
+    <section>
+        <h1 id="food-title">Food I Love</h1>
+        <p class="extra-foods">Potato</p>
+        <p class="extra-foods">Mango</p>
+        <p class="extra-foods">Rice</p>
+        <p class="extra-foods">Fish</p>
+        <p class="foods">Chicken</p>
+        <p class="foods">Watermalon</p>
+        <p class="foods">Own Head</p>
+    </section>
+
+    <section id="lorem">
+        <h1>Lorem ipsum <span>dolor sit amet.</span></h1>
+        <p>Lorem ipsum dolor sit amet consectetur <span>adipisicing elit.</span> Eos minus vitae delectus officia culpa <span>tenetur modi</span> suscipit hic voluptas aut?</p>
+        <h1>Lorem <span>ipsum dolor</span> sit amet consectetur adipisicing.</h1>
+    </section>
+    </main>
+
+    <script>
+        const student = {
+            name: "Abul Mia",
+            id: 121,
+            study: function (subject) {
+                console.log("studying subject: ", subject);
+            }
+        }
+
+        const liCollection = document.getElementsByTagName("li");
+        // console.log(liCollection);
+
+        for (const li of liCollection) {
+            // console.log(li.innerText);
+        }
+
+        // all h1 tags
+
+        const allHeading = document.getElementsByTagName("h1");
+        
+        for(const heading of allHeading) {
+            // console.log(heading);
+        }
+
+        // all p tags
+
+        const allP = document.getElementsByTagName("p");
+
+        for (const p of allP) {
+            // console.log(p.innerText);
+        }
+
+        // get by id
+
+        const foodTitleH1 = document.getElementById("food-title");
+        // console.log(foodTitleH1.innerText);
+
+        // foodTitleH1.innerText = "Foods I Love to Eat";
+
+        const anPerson = document.getElementById("person");
+        // anPerson.innerText = "Abal Choda Shakib";
+
+        // get by classname
+
+        const foodsList = document.getElementsByClassName("foods");
+
+        for (const food of foodsList) {
+            // console.log(food.innerText);
+        }
+
+        const extraFoodsList = document.getElementsByClassName("extra-foods");
+
+        for (const extraFood of extraFoodsList) {
+            // console.log(extraFood.innerText);
+        }
+
+        const allLorem = document.querySelectorAll("#lorem p span");
+
+        for (const lorem of allLorem) {
+            console.log(lorem.innerText);
+        }
+    </script>
+    <script src="./js/hello.js"></script>
+    <script src="./js/cssInJS.js"></script>
+    <script src="./js/child.js"></script>
+    <script src="./js/append.js"></script>
+</body>
+</html>

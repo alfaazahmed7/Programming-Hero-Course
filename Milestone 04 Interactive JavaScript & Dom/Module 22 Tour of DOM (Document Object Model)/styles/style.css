@@ -1,0 +1,11 @@
+#food-title {
+    color: green;
+}
+
+#section-card {
+    background-color: green;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 10px solid lightcoral;
+}

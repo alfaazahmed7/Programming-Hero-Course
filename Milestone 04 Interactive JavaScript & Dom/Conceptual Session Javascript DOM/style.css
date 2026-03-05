@@ -1,0 +1,42 @@
+* {
+    font-family: cursive;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#count-div {
+    margin-bottom: 50px;
+}
+
+#count {
+    font-size: 20px;
+}
+
+#btn {
+    padding: 10px 16px;
+    border: none;
+    background-color: coral;
+    color: #fff;
+    border-radius: 8px;
+}
+
+#products {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    
+}
+
+.product-cart {
+    border: 2px solid coral;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.wish-count {
+    font-size: 20px;
+}

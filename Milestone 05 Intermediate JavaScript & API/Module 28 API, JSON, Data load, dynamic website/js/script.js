@@ -1,0 +1,26 @@
+const loadData = () => {
+    fetch('https://jsonplaceholder.typicode.com/todos/1')
+
+        // promise of response
+        .then(response => response.json())
+
+        // promise of json data
+        .then(json => console.log(json))
+};
+
+// const loadPost = () => {
+//     const url = "https://jsonplaceholder.typicode.com/posts";
+
+//     fetch(url)
+//     .then(res => res.json())
+//     .then(json => {
+//         console.log(json);
+//         displayPost(json);
+//     })
+// };
+
+// const displayPost = (posts) => {
+//     posts.forEach((post) => {
+//         console.log(post);
+//     });
+// };

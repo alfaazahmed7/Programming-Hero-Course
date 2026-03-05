@@ -1,0 +1,1 @@
+// console.log("Hello I am new to JavaScript. I am going to learn JavaScript Dom.");
