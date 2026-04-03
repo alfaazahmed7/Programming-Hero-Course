@@ -1,0 +1,48 @@
+import React, { Suspense, useState } from 'react';
+import { Link, Navigate } from 'react-router';
+import UserDetails2 from '../UserDetails2/UserDetails2';
+
+const User = ({ user }) => {
+    const { name, email, phone, id } = user;
+    const [showInfo, setShowInfo] = useState(false);
+
+    const userPromise = fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
+        .then(res => res.json());
+
+    const [visitHome, setVisitHome] = useState(false);
+    if (visitHome) {
+        return <Navigate to="/"></Navigate>
+    }
+
+    const userStyle = {
+        border: "2px solid yellow",
+        borderRadius: "20px",
+        padding: "8px",
+        margin: "10px"
+    }
+
+    return (
+        <div style={userStyle}>
+            <h4>Name: {name}</h4>
+            <h6>Email: {email}</h6>
+            <p>
+                <small>Phone: {phone}</small>
+            </p>
+            <Link to={`/users/${id}`}>Show Details</Link>
+            <button
+                onClick={() => setShowInfo(!showInfo)}
+            >{showInfo ? "Hide" : "Show"} Info</button>
+            {
+                showInfo && <Suspense fallback={<span>Loading...</span>}>
+                    <UserDetails2 userPromise={userPromise} />
+                </Suspense>
+            }
+            <button
+                onClick={() => setVisitHome(true)}>
+                Visit Home
+            </button>
+        </div>
+    );
+};
+
+export default User;
