@@ -1,0 +1,118 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Wireless Cat-Mouse",
+            "price": 13.99,
+            "category": "Electronics",
+            "inStock": true,
+            "description": "A fun and responsive wireless mouse designed for smooth navigation and everyday use."
+        },
+        {
+            "id": 2,
+            "name": "Mechanical Keyboard",
+            "price": 49.99,
+            "category": "Electronics",
+            "inStock": true,
+            "description": "A durable mechanical keyboard with tactile feedback, perfect for typing and gaming."
+        },
+        {
+            "id": 3,
+            "name": "Running Shoes",
+            "price": 29.99,
+            "category": "Fashion",
+            "inStock": false,
+            "description": "Lightweight and comfortable running shoes designed for performance and daily workouts."
+        },
+        {
+            "id": 4,
+            "name": "Water Bottle",
+            "price": 9.99,
+            "category": "Home & Kitchen",
+            "inStock": true,
+            "description": "A reusable water bottle that keeps your drinks fresh and helps you stay hydrated all day."
+        },
+        {
+            "id": 5,
+            "name": "Backpack",
+            "price": 24.99,
+            "category": "Accessories",
+            "inStock": true,
+            "description": "A stylish and spacious backpack suitable for school, travel, and everyday use."
+        }
+    ],
+    "books": [
+        {
+            "id": 1,
+            "title": "The Alchemist",
+            "author": "Paulo Coelho",
+            "genre": "Fiction",
+            "year": 1988,
+            "rating": 4.7,
+            "available": true
+        },
+        {
+            "id": 2,
+            "title": "Atomic Habits",
+            "author": "James Clear",
+            "genre": "Self-help",
+            "year": 2018,
+            "rating": 4.8,
+            "available": false
+        },
+        {
+            "id": 3,
+            "title": "1984",
+            "author": "George Orwell",
+            "genre": "Dystopian",
+            "year": 1949,
+            "rating": 4.6,
+            "available": true
+        },
+        {
+            "id": 4,
+            "title": "To Kill a Mockingbird",
+            "author": "Harper Lee",
+            "genre": "Classic",
+            "year": 1960,
+            "rating": 4.9,
+            "available": true
+        },
+        {
+            "id": 5,
+            "title": "The Pragmatic Programmer",
+            "author": "Andrew Hunt & David Thomas",
+            "genre": "Programming",
+            "year": 1999,
+            "rating": 4.7,
+            "available": false
+        },
+        {
+            "id": 6,
+            "title": "Rich Dad Poor Dad",
+            "author": "Robert Kiyosaki",
+            "genre": "Finance",
+            "year": 1997,
+            "rating": 4.5,
+            "available": true
+        },
+        {
+            "id": 7,
+            "title": "Harry Potter and the Sorcerer's Stone",
+            "author": "J.K. Rowling",
+            "genre": "Fantasy",
+            "year": 1997,
+            "rating": 4.9,
+            "available": true
+        },
+        {
+            "id": 8,
+            "title": "Deep Work",
+            "author": "Cal Newport",
+            "genre": "Productivity",
+            "year": 2016,
+            "rating": 4.6,
+            "available": true
+        }
+    ]
+}
